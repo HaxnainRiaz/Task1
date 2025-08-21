@@ -1,0 +1,130 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            background-image: url('download.jpg');
+            background-repeat: no-repeat;
+            background: blur(10px);
+            background-size: cover;
+            width: 100%;
+            height: 100vh;            
+        }
+
+        .container h1 {
+            font-size: 70px;
+            text-align: center;
+        }
+
+        .container p {
+            font-size: x-large;
+        }
+
+
+        .can1 {
+            height: 100%;
+            width: 100%;
+            justify-items: center;
+            background: rgba(14, 13, 13, 0.342);
+            /* backdrop-filter: blur(10px); */
+        }
+
+        .can2 {
+            justify-items: center;
+            max-width: 700px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 60px;
+        }
+
+        .progress_bar_parent {
+            max-width: 300px;
+            width: 100%;
+            height: 8px;
+        }
+
+        .progress_bar {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(59, 59, 59);
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .progress_inside {
+            width: 70%;
+            height: 100%;
+            background-color: rgb(91, 91, 255);
+        }
+        .para {
+            width: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 10px;
+        }
+        .para p{
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        button{
+            width: 100px;
+            height: 30px;
+            background-color: rgb(154, 154, 241);
+            border: none;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            border-radius: 15px;
+            justify-items: center;
+            text-align: center;
+        }
+        button:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+            border: 1px solid white;
+            box-shadow: 5px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="Can1">
+            <div class="can2">
+                <h1 class="h1">
+                    Under Construction
+                </h1>
+                <p>Site Nearly Ready</p>
+                <div class="progress_bar_parent">
+                    <div class="progress_bar">
+                        <div class="progress_inside"></div>
+                    </div>
+                    <div class="para">
+                        <p>0%</p>
+                        <p>70%</p>
+                    </div>
+                </div>
+                <div class="button">
+                    <button>Notify me</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
